@@ -39,3 +39,14 @@ Jetzt sieht man auf localhost:8000 die Seite, dass das Django Projekt erfolgreic
 - ``email = models.EmailField(max_length=255, unique=True)`` Sagt, dass wir eine email Spalte wollen, die ein EmailField ist mit maximal 255 Zeichen und keine Emails doppelt eingetragen werden dürfen (Keine zwei Accounts pro Mailadresse erlaubt)
 - ``name = models.CharField(max_length=255)`` Definiert ein Textfeld, das name heißt
 - ``is_active = models.BooleanField(default=True)`` Booleanfeld - ist das Profil aktiviert, oder nicht?
+
+
+## Python allgemein
+"""asd""" ist ein Docstring
+class MyClass(ParentClass) -> Vererbung
+zwischen zwei Klassendefinitionen immer zwei leere Zeilen
+
+## Good to know!
+Bei E-Mail Adressen ist IDR der erste Teil vor dem @ Case sensitive -> Ich kann lrex@protonmail.com != Lrex@protonmail.com
+und der hintere Teil Case insensitive -> lrex@protonMail.com == lrex@protonmail.com
+-> Deswegen immer hinteren Teil der Mail als Kleinbuchstaben speichern, um nicht die Konten lrex@protonmail.com UND lrex@protonMail.com zu erlauben
