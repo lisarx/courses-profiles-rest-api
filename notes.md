@@ -46,6 +46,11 @@ Migratrionsdatei für Models: Enthält alle Schritte, um die Datenbank wieder au
 Migrationsdatei erstellen: ``python manage.py makemigrations profiles_api``
 Migrieren: ``python manage.py migrate``
 
+## Superuser erstellen
+``python manage.py createsuperuser``
+Django Admin enabeln:
+in admin.py ``from profiles_api import models``
+
 ## Python allgemein
 """asd""" ist ein Docstring
 class MyClass(ParentClass) -> Vererbung
