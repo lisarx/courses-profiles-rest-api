@@ -24,3 +24,7 @@ Django-Projekt erstellen ``django-admin.py startproject profiles_project .``
 App in Django-Projekt erstellen ``python manage.py startapp profiles_api``
 
 App in Projekt enablen: settings.py in profiles_project bearbeiten
+
+Entwicklungsserver starten python ``manage.py runserver 0.0.0.0:8000``
+
+Jetzt sieht man auf localhost:8000 die Seite, dass das Django Projekt erfolgreich erstellt wurde
