@@ -40,6 +40,11 @@ Jetzt sieht man auf localhost:8000 die Seite, dass das Django Projekt erfolgreic
 - ``name = models.CharField(max_length=255)`` Definiert ein Textfeld, das name heißt
 - ``is_active = models.BooleanField(default=True)`` Booleanfeld - ist das Profil aktiviert, oder nicht?
 
+## Migration
+Migratrionsdatei für Models: Enthält alle Schritte, um die Datenbank wieder auf die Models anzupassen
+-> Immer, wenn Models hinzugefügt oder angepasst werden, muss migriert werden (neues Model -> neue Tabelle!)
+Migrationsdatei erstellen: ``python manage.py makemigrations profiles_api``
+Migrieren: ``python manage.py migrate``
 
 ## Python allgemein
 """asd""" ist ein Docstring
